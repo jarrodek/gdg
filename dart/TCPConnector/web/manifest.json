@@ -1,0 +1,23 @@
+{
+  "name": "GDG Warsaw - Socket Connector app (Dart)",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "short_name": "GDG TCP (Dart)",
+  "description": "A demostration app from GDG Warszawa (Warsaw, Poland). It is an app that helps you debug sockets. It use chrome.sockets.tcp API. This app is written in Dart.",
+  "author": "Paweł Psztyć",
+  "minimum_chrome_version": "23",
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "sockets": {
+    "tcp": {
+      "connect": "*"
+    }
+  }
+}
