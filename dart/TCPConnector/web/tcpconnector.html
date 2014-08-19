@@ -13,7 +13,7 @@
         </header>
         <div layout vertical class="content">
             <div horizontal layout="">
-                <input type="text" id="connectionAddr" placeholder="connect to (ip + port)" value="127.0.0.1:8050" flex/>
+                <input type="text" id="connectionAddr" placeholder="connect to (ip + port)" value="74.125.224.72:80" flex/>
                 <button id="connectButton" class="button">Connect</button>
             </div>
             <div>
@@ -22,7 +22,10 @@
             </div>
             <div layout vertical>
                 <label>Send message</label><br/>
-                <textarea id="message" readonly></textarea><br/>
+                <textarea id="message">GET / HTTP/1.1
+Host: www.google.pl
+
+                </textarea><br/>
                 <button id="sendButton" disabled class="button">Send</button>
             </div>
         </div>

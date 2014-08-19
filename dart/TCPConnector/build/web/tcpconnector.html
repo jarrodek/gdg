@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TCP Connector</title>
+    <link rel="stylesheet" href="tcpconnector.css">
+  </head>
+  <body>
+    <div layout vertical class="app-container">
+        <header class="app-header">
+            <h1>GDG TCP socket connection example (Dart version)</h1>
+        </header>
+        <div layout vertical class="content">
+            <div horizontal layout="">
+                <input type="text" id="connectionAddr" placeholder="connect to (ip + port)" value="74.125.224.72:80" flex/>
+                <button id="connectButton" class="button">Connect</button>
+            </div>
+            <div>
+                <span class="status-label">Status:</span>
+                <span id="status" flex>Not connected</span>
+            </div>
+            <div layout vertical>
+                <label>Send message</label><br/>
+                <textarea id="message">GET / HTTP/1.1
+Host: www.google.pl
+
+                </textarea><br/>
+                <button id="sendButton" disabled class="button">Send</button>
+            </div>
+        </div>
+        <div flex class="output">
+            <div id="output"></div>
+        </div>
+        <footer>
+            copyright &copy; <a href="https://google.com/+PawelPsztyc" target="_blank">Paweł Psztyć</a>, <a href="https://plus.google.com/+GdgWarszawaPl" target="_blank">GDG Warszawa</a>
+        </footer>
+    </div>
+    <script src="packages/chrome/bootstrap.js" defer></script>
+    <script src="tcpconnector.dart.precompiled.js"></script>    
+  </body>
+</html>

@@ -4,3 +4,11 @@ dependencies:
   chrome: any
 transformers:
 - chrome
+- $dart2js:
+    checked: false
+    minify: true
+    verbose: false
+    analyzeAll: false
+    suppressWarnings: false
+    suppressHints: false
+    terse: false
